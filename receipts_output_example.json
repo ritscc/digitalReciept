@@ -1,0 +1,26 @@
+{
+  "email_meta": {
+    "subject": "【RCC】部費受領のお知らせと電子領収書",
+    "body_template": "{recipient} 様\n\n部費を受領しました。\n以下の通り、電子領収書を発行します。\n\n[受領内容]\n受領日: {date}\n金額: {amount}円\n発行者: {issuer}\n\n--- 領収書データ(検証用) ---\n{receipt_b64}\n\n--- Ed25519 署名 ---\n{signature_b64}\n\n※ 領収書の検証は公式Discordの公開鍵と検証ツールを使用してください。\n"
+  },
+  "contents": [
+    {
+      "email": "test1@example.com",
+      "recipient": "name1",
+      "date": "2026-04-27",
+      "amount": 1000,
+      "issuer": "RCC Accounting Department",
+      "receipt_b64": "eyJkYXRlIjoiMjAyNi0wNC0yNyIsImFtb3VudCI6MTAwMCwicmVjaXBpZW50IjoibmFtZTEiLCJpc3N1ZXIiOiJSQ0MgQWNjb3VudGluZyBEZXBhcnRtZW50In0=",
+      "signature_b64": "/lDZ6x11dAQl7dtc7qu/tbbv0jdraFGRIKlJ/ay2qWc4wwmrqcxB0bpOdprbaC3qNZHfEwTTZ0cvx1hD0bXkAg=="
+    },
+    {
+      "email": "test2@example.net",
+      "recipient": "name2",
+      "date": "2026-04-27",
+      "amount": 2000,
+      "issuer": "RCC Accounting Department",
+      "receipt_b64": "eyJkYXRlIjoiMjAyNi0wNC0yNyIsImFtb3VudCI6MjAwMCwicmVjaXBpZW50IjoibmFtZTIiLCJpc3N1ZXIiOiJSQ0MgQWNjb3VudGluZyBEZXBhcnRtZW50In0=",
+      "signature_b64": "/fsHBNNQCfO/4Q4cVoQEMJYly/fX/kImYZy9TNRZWr/HFUlt2J4rR2UtEoyqZt9MH/4NcWMXDNwpo6eTgKNEBw=="
+    }
+  ]
+}
