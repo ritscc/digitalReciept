@@ -14,15 +14,13 @@
 
 ### 推奨環境
 git
+
 mise
  - gh
  - python
  - uv
 
-```python
-uv init
-uv add cryptography
-```
+`uv sync`
 
 ## 領収書の検証方法
 
